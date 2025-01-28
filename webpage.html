@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        My first web page
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="navbar">
+        <img id="logo" alt="THEKST logo"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAYFBMVEX///99uP+Fuv+82f+u0f9SpP8slv9eqf/G3/8AhP8AiP+Jvf8Ai/8AjP8Ahv+Swv+MwP9prv+mzf8YkP/l8P91tP9JoP/q8/+cx/8Njv87m/8AgP/P5P/5/P/a6/8Aif/4qxMbAAAAvUlEQVR4AdXQBxLDIAwEQLnbikRMCz7X/78ybSpMPpBzhaXTX6aqm++37fphLHHi2+czsIiae4FGZyJqWK3r/RR+YZQHUWJxOfIXrVSfhrIUiCqFdFMkcsJjgR7MrAB70ZXybPDeY9o7QO1R4Gnh0e9HVO8XKjKLMEvXq1zKNrc0yULBRpX27GDODJtLqHnYXuN3n22G4xvdBKAiOko8jNbBQSFjsiiP726E5bKrXKxcU5G2Zz8T1bj6lv4yL7sHC9guaHWrAAAAAElFTkSuQmCC">
+    </div>
+    <img id="banner" src="alone.jpg.jpg" alt="Banner" height="240">
+    <h1>
+        About THEKST
+    </h1>
+    <div id="about">
+        <div id="description">
+            <P style="margin-top:0;">At THEKST, we're on a mission to build
+                the world's most highly reputed technical
+                university, and we're building it completely
+                online. We offer several beginner friendly
+                courses that are taken by <b>300,000+</b> registered
+                users.
+            </P>
+            <p>We also offer 2 industry-focused bootcamps:
+            <ol>
+                <li>
+                    <a href="https://www.jovian.com/full-stack-developer-bootcamp">
+                        Full Stack Developer Bootcamp
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.jovian.com/data-science-bootcamp">
+                        Data Science Bootcamp
+                    </a>
+                </li>
+            </ol>
+            </p>
+        </div>
+        <div id="team">
+            <img id="team-image" src="batman.jpg.jpg" alt="batman">
+        </div>
+    </div>
+
+    <h2>job oppurtunities</h2>
+    <div id="jobs">
+        <table id="jobs-table">
+            <tr class="jobs-header-row">
+                <th rowspan="2">Job Title</th>
+                <th colspan="2">Location</th>
+                <th rowspan="2">Salary</th>
+                <th rowspan="2">Posted on</th>
+            </tr>
+            <tr class="jobs-header-row">
+                <th>City</th>
+                <th>Country</th>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>Frontend Developer</td>
+                <td>Benngaluru</td>
+                <td>India</td>
+                <td>12,00,000</td>
+                <td>Mar 3, 2023</td>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>Full stack Developer</td>
+                <td>Delhi</td>
+                <td>India</td>
+                <td>15,00,000</td>
+                <td>feb 1, 2023</td>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>Data scientist</td>
+                <td>San franisico</td>
+                <td>USA</td>
+                <td>$80,000</td>
+                <td>dec 22, 2023</td>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>ML Engineer</td>
+                <td colspan="2">Remote</td>
+                <td>$70,0000</td>
+                <td>feb 3, 2023</td>
+            </tr>
+        </table>
+    </div>
+    <div id="application">
+        <h2>Submit Your Application</h2>
+        <form id="application-form" 
+        action="https://formbold.com/s/3ngkY"
+        method="post"
+        enctype="multipart/form-data">
+            <div class="form-group">
+                <lable for="name">Full Name</lable><br>
+                <input type="text" id="name" name="Full Name" required placeholder="Tharun">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" required placeholder="Tharun@example.com">
+            </div>
+            <div class="form-group">
+
+                <label for="phone">Phone</label><br>
+                <input type="tel" id="phone" name="phone" required placeholder="+919898989898">
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth</label><br>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="form-group">
+                <lable for="position">Position Applied for</lable><br>
+                <select id="position" name="positionApplied" required>
+                    <option value="">Select Position</option>
+                    <option value="Frontend developer">Frontend developer</option>
+                    <option value="Full stack developer">Full Stack Developer</option>
+                    <option value="Data Scientist">Data scientist</option>
+                    <option value="ML Engineer">ML Engineer</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="resume">Upload Resume</label><br>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+            </div>
+            <div class="form-group">
+                <label for="coverletter">Cover Letter</label><br>
+                <textarea id="coverletter" name="coverletter" rows="5" required placeholder="Explain what makes you suitable for the job.."></textarea>
+            </div>
+            <div class="form-group">
+                <label for="terms">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    I agree to the terms and conditions
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit Application">
+            </div>
+        </form>
+    </div>
+    <div id="footer">
+        <ul id="footer-links">
+            <li>
+                <a href="www.youtube.com" target="_blank">
+                    Courses
+                </a>
+            </li>
+            <li>
+                <a href="www.youtube.com" target="_blank">
+                    Programs
+                </a>
+            </li>
+            <li>
+                <a href="www.youtube.com" target="_blank">
+                    Youtube
+                </a>
+            </li>
+        </ul>
+        <span class="copyright">© 2024, THEKST</span>
+    </div>
+</body>
+
+</html>
